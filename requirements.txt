@@ -1,0 +1,7 @@
+line-bot-sdk
+flask
+gunicorn
+Pillow
+psycopg2
+urllib3
+selenium
