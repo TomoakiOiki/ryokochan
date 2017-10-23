@@ -35,7 +35,7 @@ app = Flask(__name__)
 
 line_bot_api = LineBotApi(os.environ.get('LINE_ACCESS_TOKEN'))
 handler = WebhookHandler(os.environ.get('LINE_CHANNEL_SECRET'))
-url = urlparse.urlparse(os.environ.get('DATABASE_URL'))
+url = urlparse.urlparse(os.environ.get('LINE_DATABASE_URL'))
 
 dbname = url.path[1:]
 user = url.username
